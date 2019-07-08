@@ -57,6 +57,7 @@ These are:
   - Logging log writer
   - Monitoring metric writer
   - Monitoring viewer
+- Setting logging and monitoring to use Stackdriver Kubernetes integration
 
 ## Usage
 
