@@ -29,7 +29,7 @@ terraform {
 # times within a module. They are used here to determine the GCP region from
 # the given location, which can be either a region or zone.
 locals {
-  gcp_location_parts = [split("-", var.gcp_location)]
+  gcp_location_parts = split("-", var.gcp_location)
   gcp_region         = "${local.gcp_location_parts[0]}-${local.gcp_location_parts[1]}"
 }
 
