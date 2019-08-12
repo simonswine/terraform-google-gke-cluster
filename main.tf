@@ -54,7 +54,7 @@ resource "google_container_cluster" "cluster" {
   # google_container_engine_versions data source useful - it indicates which
   # versions are available. If you intend to specify versions manually, the
   # docs describe the various acceptable formats for this field.
-  min_master_version = "latest"
+  min_master_version = var.min_master_version
 
   maintenance_policy {
     daily_maintenance_window {
